@@ -7,9 +7,7 @@
   <title>Galdiano e Lopes Advocacia</title>
   <link rel="icon" href="https://i.ibb.co/GfMD27Bp/copilot-image-1751664241256.png" type="image/png" />
   <style>
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
     body {
       margin: 0;
       font-family: 'Georgia', serif;
@@ -27,17 +25,17 @@
       width: 240px;
       background-color: #0a1a2f;
       padding: 20px;
-      flex-shrink: 0;
       border-right: 1px solid #1c2e45;
     }
     nav h2 {
-      font-size: 1.2em;
       margin-bottom: 15px;
+      font-size: 1.2em;
       color: #7FDBFF;
     }
     nav ul {
       list-style: none;
       padding: 0;
+      margin: 0;
     }
     nav ul li {
       margin: 10px 0;
@@ -61,22 +59,22 @@
       margin-bottom: 15px;
     }
     h1 {
-      font-size: 1.8em;
       margin: 10px 0;
+      font-size: 1.8em;
     }
     p {
-      font-size: 1.1em;
       margin: 10px 0 30px;
+      font-size: 1.1em;
     }
     .button {
       display: inline-block;
+      margin-bottom: 30px;
       padding: 12px 24px;
       background-color: #0074D9;
       color: #fff;
       text-decoration: none;
       border-radius: 5px;
       font-weight: bold;
-      margin-bottom: 30px;
       transition: background-color 0.3s ease;
     }
     .button:hover {
@@ -97,12 +95,19 @@
     footer {
       background-color: #0a1a2f;
       padding: 30px 20px;
-      text-align: center;
       border-top: 1px solid #1c2e45;
+      text-align: center;
+    }
+    .footer-columns {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 60px;
+      margin-bottom: 20px;
     }
     footer h3 {
-      color: #7FDBFF;
       margin-bottom: 10px;
+      color: #7FDBFF;
     }
     footer ul {
       list-style: none;
@@ -119,22 +124,13 @@
     footer ul li a:hover {
       text-decoration: underline;
     }
-    .footer-columns {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 40px;
-      margin-bottom: 20px;
-    }
     @media (max-width: 768px) {
-      .container {
-        flex-direction: column;
-      }
+      .container { flex-direction: column; }
       nav {
         width: 100%;
-        text-align: center;
         border-right: none;
         border-bottom: 1px solid #1c2e45;
+        text-align: center;
       }
     }
   </style>
@@ -165,11 +161,13 @@
         <p>Atendimento jurídico com excelência e compromisso.<br />
         Especializado em diversas áreas do Direito.</p>
 
-        <a class="button" href="https://wa.me/5521978386161" target="_blank" rel="noopener noreferrer">Fale conosco agora</a>
+        <a class="button" href="https://wa.me/5521978386161" target="_blank" rel="noopener noreferrer">
+          Fale conosco agora
+        </a>
 
         <div class="social">
-          <a href="https://instagram.com/carlosodireito" target="_blank" rel="noopener noreferrer">Instagram</a> |
-          <a href="https://facebook.com/galdianolopes" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://instagram.com/carlosodireito" target="_blank">Instagram</a> |
+          <a href="https://facebook.com/galdianolopes" target="_blank">Facebook</a>
         </div>
       </main>
     </div>
@@ -180,18 +178,30 @@
       <div>
         <h3>Links Úteis</h3>
         <ul>
-          <li><a href="https://www.jusbrasil.com.br/" target="_blank">JusBrasil</a></li>
-          <li><a href="https://www.stf.jus.br/" target="_blank">Supremo Tribunal Federal (STF)</a></li>
-          <li><a href="https://www.cnj.jus.br/" target="_blank">Conselho Nacional de Justiça (CNJ)</a></li>
-          <li><a href="https://www.oab.org.br/" target="_blank">Ordem dos Advogados do Brasil (OAB)</a></li>
+          <li><a href="https://portal.stf.jus.br/" target="_blank">Supremo Tribunal Federal (STF)</a></li>
+          <li><a href="https://www.stj.jus.br/sites/portalp/Inicio" target="_blank">Superior Tribunal de Justiça (STJ)</a></li>
+          <li><a href="https://www.tst.jus.br/" target="_blank">Tribunal Superior do Trabalho (TST)</a></li>
+          <li><a href="https://www.tse.jus.br/" target="_blank">Tribunal Superior Eleitoral (TSE)</a></li>
+          <li><a href="https://www.oab.org.br/" target="_blank">Ordem dos Advogados do Brasil (OAB Nacional)</a></li>
+          <li><a href="https://www.tjrj.jus.br/" target="_blank">Tribunal de Justiça do Rio de Janeiro (TJRJ)</a></li>
+          <li><a href="https://www.stm.jus.br/" target="_blank">Superior Tribunal Militar (STM)</a></li>
+          <li><a href="https://www.trf2.jus.br/" target="_blank">Tribunal Regional Federal da 2ª Região (TRF2)</a></li>
+          <li><a href="https://www.mprj.mp.br/" target="_blank">Ministério Público do Estado do Rio de Janeiro (MPRJ)</a></li>
+          <li><a href="https://www.oabrj.org.br/" target="_blank">Ordem dos Advogados do Brasil – Seção RJ (OABRJ)</a></li>
+          <li><a href="https://www.dpu.def.br/" target="_blank">Defensoria Pública da União (DPU)</a></li>
+          <li><a href="https://defensoria.rj.def.br/" target="_blank">Defensoria Pública do Estado do Rio de Janeiro (DPE-RJ)</a></li>
+          <li><a href="https://www.procon.rj.gov.br/" target="_blank">Procon RJ</a></li>
+          <li><a href="https://www.consumidor.gov.br/" target="_blank">Consumidor.gov.br</a></li>
+          <li><a href="https://www2.camara.leg.br/" target="_blank">Câmara dos Deputados</a></li>
+          <li><a href="https://www25.senado.leg.br/" target="_blank">Senado Federal</a></li>
         </ul>
       </div>
       <div>
         <h3>Notícias Jurídicas</h3>
         <ul>
-          <li><a href="https://www.migalhas.com.br/" target="_blank">Migalhas</a></li>
-          <li><a href="https://linkjuridico.com.br/" target="_blank">Link Jurídico</a></li>
-          <li><a href="https://direitocomkauane.com.br/" target="_blank">Direito com Kauane</a></li>
+          <li><a href="https://www.migalhas.com.br/" target="_blank">Portal Migalhas</a></li>
+          <li><a href="https://www.conjur.com.br/" target="_blank">Consultor Jurídico (ConJur)</a></li>
+          <li><a href="https://www.jota.info/" target="_blank">JOTA</a></li>
         </ul>
       </div>
     </div>
@@ -203,3 +213,4 @@
 
 </body>
 </html>
+```[43dcd9a7-70db-4a1f-b0ae-981daa162054](https://github.com/RTPorfirio/Carranca/tree/17488c2e139ffb19b9c44df95df7458a1a5bb090/index.php?citationMarker=43dcd9a7-70db-4a1f-b0ae-981daa162054 "1")[43dcd9a7-70db-4a1f-b0ae-981daa162054](https://github.com/Amanda82cyber/Scripts_TCC/tree/cd9920fba0c1c20b65f46c9c3bdb6c6d6c49a5d3/menu.php?citationMarker=43dcd9a7-70db-4a1f-b0ae-981daa162054 "2")[43dcd9a7-70db-4a1f-b0ae-981daa162054](https://github.com/miguelrisquelme/Cardians/tree/f238d6ac1be11c1e218b74922653126058a7acb3/contato.php?citationMarker=43dcd9a7-70db-4a1f-b0ae-981daa162054 "3")
