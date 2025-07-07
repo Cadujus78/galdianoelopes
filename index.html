@@ -3,20 +3,51 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Galdiano e Lopes Advocacia - Especialistas em Direito Civil, Trabalhista e de Família. Atendimento com excelência e compromisso." />
+  <meta name="description" content="Galdiano e Lopes Advocacia - Especialistas em diversas áreas do Direito. Atendimento com excelência e compromisso." />
   <title>Galdiano e Lopes Advocacia</title>
   <link rel="icon" href="https://i.ibb.co/GfMD27Bp/copilot-image-1751664241256.png" type="image/png" />
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       margin: 0;
       font-family: 'Georgia', serif;
       background-color: #001f3f;
       color: #f0f0f0;
-      text-align: center;
-      padding: 0 20px;
+      display: flex;
+      min-height: 100vh;
     }
-    header {
-      padding: 40px 0 10px;
+    nav {
+      width: 240px;
+      background-color: #002b5c;
+      padding: 20px;
+      flex-shrink: 0;
+    }
+    nav h2 {
+      font-size: 1.2em;
+      margin-bottom: 15px;
+      color: #7FDBFF;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+    nav ul li {
+      margin: 10px 0;
+    }
+    nav ul li a {
+      color: #f0f0f0;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+    .content {
+      flex-grow: 1;
+      padding: 30px 20px;
+      text-align: center;
     }
     header img {
       max-width: 160px;
@@ -24,16 +55,12 @@
       margin-bottom: 10px;
     }
     h1 {
-      font-size: 1.5em;
+      font-size: 1.6em;
       margin: 10px 0;
     }
     p {
       font-size: 1.1em;
       margin: 10px 0 30px;
-    }
-    main {
-      max-width: 600px;
-      margin: 0 auto;
     }
     .button {
       display: inline-block;
@@ -65,34 +92,56 @@
       font-size: 0.9em;
       color: #cccccc;
       margin-top: 40px;
-      padding-bottom: 30px;
+    }
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+      nav {
+        width: 100%;
+        text-align: center;
+      }
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <img src="https://i.ibb.co/GfMD27Bp/copilot-image-1751664241256.png" alt="Logo Galdiano e Lopes" />
-    <h1>Galdiano e Lopes Advocacia</h1>
-    <p><em>“Direito, nossa vocação. Justiça, nosso propósito.”</em></p>
-  </header>
+  <nav>
+    <h2>Áreas de Atuação</h2>
+    <ul>
+      <li><a href="#">Direito Civil</a></li>
+      <li><a href="#">Direito de Família</a></li>
+      <li><a href="#">Direito do Consumidor</a></li>
+      <li><a href="#">Direito Processual Civil</a></li>
+      <li><a href="#">Direito do Trabalho</a></li>
+      <li><a href="#">Direito Processual do Trabalho</a></li>
+    </ul>
+  </nav>
 
-  <main>
-    <p>Atendimento jurídico com excelência e compromisso.<br />
-    Especializado em Direito Civil, Trabalhista e de Família.</p>
+  <div class="content">
+    <header>
+      <img src="https://i.ibb.co/GfMD27Bp/copilot-image-1751664241256.png" alt="Logo Galdiano e Lopes" />
+      <h1>Galdiano e Lopes Advocacia</h1>
+      <p><em>“Direito, nossa vocação. Justiça, nosso propósito.”</em></p>
+    </header>
 
-    <a class="button" href="https://wa.me/5521978386161" target="_blank" rel="noopener noreferrer">Fale conosco agora</a>
+    <main>
+      <p>Atendimento jurídico com excelência e compromisso.<br />
+      Especializado em diversas áreas do Direito.</p>
 
-    <div class="social">
-      <a href="https://instagram.com/carlosodireito" target="_blank" rel="noopener noreferrer">Instagram</a> |
-      <a href="https://facebook.com/galdianolopes" target="_blank" rel="noopener noreferrer">Facebook</a>
-    </div>
-  </main>
+      <a class="button" href="https://wa.me/5521978386161" target="_blank" rel="noopener noreferrer">Fale conosco agora</a>
 
-  <footer>
-    📱 (21) 97838-6161<br />
-    ✉️ direito7p1n@gmail.com
-  </footer>
+      <div class="social">
+        <a href="https://instagram.com/carlosodireito" target="_blank" rel="noopener noreferrer">Instagram</a> |
+        <a href="https://facebook.com/galdianolopes" target="_blank" rel="noopener noreferrer">Facebook</a>
+      </div>
+    </main>
+
+    <footer>
+      📱 (21) 97838-6161<br />
+      ✉️ direito7p1n@gmail.com
+    </footer>
+  </div>
 
 </body>
 </html>
