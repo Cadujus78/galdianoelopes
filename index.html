@@ -13,10 +13,15 @@
     body {
       margin: 0;
       font-family: 'Georgia', serif;
-      background-color: #0a1a2f; /* azul escuro do logo */
+      background-color: #0a1a2f;
       color: #f0f0f0;
       display: flex;
       min-height: 100vh;
+      flex-direction: column;
+    }
+    .container {
+      display: flex;
+      flex: 1;
     }
     nav {
       width: 240px;
@@ -51,7 +56,7 @@
       text-align: center;
     }
     header img {
-      max-width: 240px;
+      max-width: 280px;
       height: auto;
       margin-bottom: 15px;
     }
@@ -90,12 +95,39 @@
       text-decoration: underline;
     }
     footer {
-      font-size: 0.9em;
-      color: #cccccc;
-      margin-top: 40px;
+      background-color: #0a1a2f;
+      padding: 30px 20px;
+      text-align: center;
+      border-top: 1px solid #1c2e45;
+    }
+    footer h3 {
+      color: #7FDBFF;
+      margin-bottom: 10px;
+    }
+    footer ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    footer ul li {
+      margin: 5px 0;
+    }
+    footer ul li a {
+      color: #f0f0f0;
+      text-decoration: none;
+    }
+    footer ul li a:hover {
+      text-decoration: underline;
+    }
+    .footer-columns {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      margin-bottom: 20px;
     }
     @media (max-width: 768px) {
-      body {
+      .container {
         flex-direction: column;
       }
       nav {
@@ -109,42 +141,65 @@
 </head>
 <body>
 
-  <nav>
-    <h2>Áreas de Atuação</h2>
-    <ul>
-      <li><a href="#">Direito Civil</a></li>
-      <li><a href="#">Direito de Família</a></li>
-      <li><a href="#">Direito do Consumidor</a></li>
-      <li><a href="#">Direito Processual Civil</a></li>
-      <li><a href="#">Direito do Trabalho</a></li>
-      <li><a href="#">Direito Processual do Trabalho</a></li>
-    </ul>
-  </nav>
+  <div class="container">
+    <nav>
+      <h2>Áreas de Atuação</h2>
+      <ul>
+        <li><a href="#civil">Direito Civil</a></li>
+        <li><a href="#familia">Direito de Família</a></li>
+        <li><a href="#consumidor">Direito do Consumidor</a></li>
+        <li><a href="#processual-civil">Direito Processual Civil</a></li>
+        <li><a href="#trabalho">Direito do Trabalho</a></li>
+        <li><a href="#processual-trabalho">Direito Processual do Trabalho</a></li>
+      </ul>
+    </nav>
 
-  <div class="content">
-    <header>
-      <img src="https://i.ibb.co/GfMD27Bp/copilot-image-1751664241256.png" alt="Logo Galdiano e Lopes" />
-      <h1>Galdiano e Lopes Advocacia</h1>
-      <p><em>“Direito, nossa vocação. Justiça, nosso propósito.”</em></p>
-    </header>
+    <div class="content">
+      <header>
+        <img src="https://i.ibb.co/GfMD27Bp/copilot-image-1751664241256.png" alt="Logo Galdiano e Lopes" />
+        <h1>Galdiano e Lopes Advocacia</h1>
+        <p><em>“Direito, nossa vocação. Justiça, nosso propósito.”</em></p>
+      </header>
 
-    <main>
-      <p>Atendimento jurídico com excelência e compromisso.<br />
-      Especializado em diversas áreas do Direito.</p>
+      <main>
+        <p>Atendimento jurídico com excelência e compromisso.<br />
+        Especializado em diversas áreas do Direito.</p>
 
-      <a class="button" href="https://wa.me/5521978386161" target="_blank" rel="noopener noreferrer">Fale conosco agora</a>
+        <a class="button" href="https://wa.me/5521978386161" target="_blank" rel="noopener noreferrer">Fale conosco agora</a>
 
-      <div class="social">
-        <a href="https://instagram.com/carlosodireito" target="_blank" rel="noopener noreferrer">Instagram</a> |
-        <a href="https://facebook.com/galdianolopes" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <div class="social">
+          <a href="https://instagram.com/carlosodireito" target="_blank" rel="noopener noreferrer">Instagram</a> |
+          <a href="https://facebook.com/galdianolopes" target="_blank" rel="noopener noreferrer">Facebook</a>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-columns">
+      <div>
+        <h3>Links Úteis</h3>
+        <ul>
+          <li><a href="https://www.jusbrasil.com.br/" target="_blank">JusBrasil</a></li>
+          <li><a href="https://www.stf.jus.br/" target="_blank">Supremo Tribunal Federal (STF)</a></li>
+          <li><a href="https://www.cnj.jus.br/" target="_blank">Conselho Nacional de Justiça (CNJ)</a></li>
+          <li><a href="https://www.oab.org.br/" target="_blank">Ordem dos Advogados do Brasil (OAB)</a></li>
+        </ul>
       </div>
-    </main>
-
-    <footer>
+      <div>
+        <h3>Notícias Jurídicas</h3>
+        <ul>
+          <li><a href="https://www.migalhas.com.br/" target="_blank">Migalhas</a></li>
+          <li><a href="https://linkjuridico.com.br/" target="_blank">Link Jurídico</a></li>
+          <li><a href="https://direitocomkauane.com.br/" target="_blank">Direito com Kauane</a></li>
+        </ul>
+      </div>
+    </div>
+    <div>
       📱 (21) 97838-6161<br />
       ✉️ direito7p1n@gmail.com
-    </footer>
-  </div>
+    </div>
+  </footer>
 
 </body>
 </html>
